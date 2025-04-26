@@ -70,7 +70,7 @@ def get_kwikintent_signal(user_data, mdl, label_encs, target_encoder):
     pred_label = target_encoder.inverse_transform([pred_class])[0]
     return pred_label
 
-@app.post("/predict", response_model=PredictResponse)
+@app.post("/api/predict", response_model=PredictResponse)
 def predict(request: PredictRequest):
     try:
         mdl, label_encs, target_encoder = load_artifacts()
