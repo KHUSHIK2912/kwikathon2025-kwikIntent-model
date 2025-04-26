@@ -16,9 +16,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), '../model/kwikathon_model_v1.pkl')
-LABEL_ENCODER_PATH = os.path.join(os.path.dirname(__file__), '../model/label_encoder.joblib')
-TARGET_ENCODER_PATH = os.path.join(os.path.dirname(__file__), '../model/target_encoder.joblib')
+MODEL_PATH = os.path.join(os.path.dirname(__file__), '../model/kwikathon_model_v2.pkl')
+LABEL_ENCODER_PATH = os.path.join(os.path.dirname(__file__), '../model/label_encoder2.joblib')
+TARGET_ENCODER_PATH = os.path.join(os.path.dirname(__file__), '../model/target_encoder2.joblib')
 
 class PredictRequest(BaseModel):
     api_data_1: Dict[str, Any]
